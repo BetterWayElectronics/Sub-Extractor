@@ -20,11 +20,11 @@ The script can be run from the command line. You can specify either a single vid
 
 Extract Subtitles from a Single Video File
 
-    python extract_subs.py "/path/to/video.mkv"
+    python BwE_Sub_Extractor.py "/path/to/video.mkv"
 
 Extract Subtitles from All .mkv Files in a Directory
 
-    python extract_subs.py "/path/to/directory"
+    python BwE_Sub_Extractor.py "/path/to/directory"
 
 ## How It Works
 
