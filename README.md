@@ -1,10 +1,10 @@
-# BwE English Subtitle Extractor (SRT)
+# BwE English Subtitle Extractor (ASS -> SRT)
 
-BwE English Subtitle Extractor is a Python script that extracts English subtitles from video files, primarily those with the `.mkv` extension. It leverages `ffmpeg` to extract subtitles and logs every step of its operation for easy monitoring and troubleshooting. I made this because my Plex client for some reason cannot handle ASS/ASA subtitles and crashes near the end of every video. Having the SRT extracted from the video means that transcoding doesn't need to happen and I can use Direct Play and load the SRT instead. This greatly improves CPU usage on my server and removes the crashing issue I had. Hopefully this app is useful for other people with similar issues or those who just want to extract subtitles. Feel free to change the language within the code if you don't want English subtitles. It does not support the extraction of SRT subs embedded within MKV, though this is possible with some code editing.
+BwE English Subtitle Extractor is a Python script that extracts English subtitles from video files, primarily those with the `.mkv` extension. It leverages `ffmpeg` to extract subtitles and logs every step of its operation for easy monitoring and troubleshooting. I made this because my Plex client for some reason cannot handle ASS/ASA subtitles and crashes near the end of every video. Having the SRT converted and extracted from the video means that transcoding doesn't need to happen and I can use Direct Play and load the SRT instead. This greatly improves CPU usage on my server and removes the crashing issue I had. Hopefully this app is useful for other people with similar issues or those who just want to extract subtitles. Feel free to change the language within the code if you don't want English subtitles. It does not support the extraction of SRT subs embedded within MKV, though this is possible with some code editing.
 
 ## Features
 
-- **Extract English Subtitles:** Utilizes `ffmpeg` to extract English subtitle streams from video files.
+- **Extract & Convert English Subtitles:** Utilizes `ffmpeg` to extract English ASS/ASA subtitle streams from video files and converts them to SRT.
 - **Directory Scanning:** Recursively searches through directories and subdirectories for `.mkv` files.
 - **Logging:** Logs all operations, including errors and successful extractions, to an `extract_subs.log` file in the script's directory.
 - **Cross-Platform:** Developed in Python 3.12.0, primarily designed for Windows applications but compatible with any system where Python and `ffmpeg` are installed.
